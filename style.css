@@ -1,0 +1,181 @@
+@font-face {
+    font-family: trend;
+    src: url(./fonts/Trends.ttf);
+}
+
+@font-face {
+    font-family: bebas;
+    src: url(./fonts/BebasNeue-Regular.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ffffff;
+    color: #c4c0c0;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #a19d9d;
+    padding: 20px;
+    color: #ffffff;
+}
+
+header button{
+    background-color: #ffffff;
+    color: #6b6666;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+section{
+    padding: 20px;
+    margin: 20px auto;
+    height: 100vh;
+    width: 70%;
+}
+
+button {
+    padding: 10px 15px;
+    border-radius: 20px;
+    background-color: #3d3d3d;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #bdb5b5;
+}
+
+#sobre div{
+    width: 50%;
+}
+
+#sobre img{
+    height: 400px;
+
+}
+
+#sobre{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+h2{
+    margin-bottom: 10px;
+    font-size: 3em;
+    font-family: trend;
+}
+
+h3{
+    margin-bottom: 10px;
+    font-size: 2em;
+    font-family: bebas;
+}
+
+p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.projeto{
+    background-color: #746f6f;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+
+/* --------- Modo Escuro -------- */
+
+.dark-mode{
+    background-color: #1b1b1b;
+    color: #f5f0f0;
+}
+
+.dark-mode header{
+    background-color: #353434;
+}
+
+.dark-mode header button{
+    background-color: #6b6666;
+    color: #f5f0f0;
+}
+
+.dark-mode .projeto{
+    background-color: #949090;
+    color: #f5f0f0;
+}
+
+.dark-mode button{
+        background-color: #fcfcfc;
+        color: #3b3a3a;
+
+    }
+
+.dark-mode button:hover{
+    background-color: #5f5b5b;
+    color: #fff;
+}
+    
+
+/* ------ Responsividade ------  */
+
+@media (max-width: 480px) {
+
+    h3 {
+        font-size: 2em;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    h2{
+        font-size: 1.5em;
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+
+    section {
+        padding: 15px;
+        margin: 30px;
+    }
+
+    p{
+        text-align: justify;
+    }
+
+    #sobre {
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-left: 15%;
+    }
+
+    #sobre div{
+        width: 100%;
+    }
+
+    #sobre p{
+        font-size: 1.1em;
+    }
+
+    #projetos{
+        margin-left: 15%;
+    }
+
+    #sobre img{
+        height: 300px;
+        margin-top: 25px;
+    }
+
+}
